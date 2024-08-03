@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Play: Capi Run</title>
+    <link rel="website icon" type="png" href="img/p.png">
+
+    <style>
+        * {
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    height: 100vh;
+    background: #584040;
+    display: flex;
+    align-items: center;
+}
+.portada{
+    width: 300px;
+    height: 300px;
+
+    
+
+    position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: transform 0.2s ease-in-out;
+}
+
+.portada:hover {
+  transform: translate(-50%, -50%) scale(1.1);
+}
+
+
+
+
+
+
+    </style>
+</head>
+<body>
+
+    
+    <div class="portada">
+        <a href="img/juego.html">
+            <img class="portada" src="img/portada.png" alt="portada">
+            <audio id="click.mp3">
+                <source src="img/click.mp3.mp3" type="audio/mp3">
+              </audio>
+            </a>
+            
+            <script>
+              document.querySelector('img').addEventListener('mouseover', function() {
+                document.getElementById('img/click.mp3.mp3').play();
+              });
+            </script>
+    </a></div>
+    
+</body>
+</html>
